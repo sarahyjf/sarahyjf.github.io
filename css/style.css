@@ -1,0 +1,88 @@
+body {
+	background-color: lightsalmon;
+	background-image:url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size:cover; /*fit to screen*/
+	background-position: 50% 50%; /*center to screen*/
+	background-attachment: fixed;
+	font-family: 'Oswald', Arial, sans-serif;
+}
+
+.main {
+	max-width: 600px;
+	background: rgba(255,255,255,0.85);
+	margin: 0 auto; /*no padding top or bottom but automatic to left and right*/ 
+	padding: 20px;
+	border-radius: 40px;
+	box-shadow: 0px 0px 40px 0px grey;
+}
+
+h1 {
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+	text-align: center;
+	font-weight: normal;
+	text-transform: uppercase; 
+	letter-spacing: 5px;
+}
+
+h3 {
+	border-top: 1px solid orange;
+	padding-top: 20;
+}
+
+h3:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+/*when the h3 element is being hovered change cursor to pointer*/
+
+h3:after {
+	float: right;
+	content: '▼';
+} /*make an element inside*/
+
+h3.open:after {
+	content: '▲';
+}
+
+img {
+	display: block;
+	margin: 0 auto; /*centers image*/
+	transition: transform 1s;
+}
+
+img:hover {
+	transform:rotateZ(1800deg) scale(1.5); /*rotate around the Z axis 1800 deg*/
+}
+
+.banana {
+	border-radius: 50%; /*sorta makes it a circle*/
+	border: 10px dotted white; /*width, style(can be dotted, dashed), color*/
+}
+
+p,
+ul,
+ol {
+	line-height:1.6;
+	list-style: none;
+	padding-left: 0;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: black;
+	font-size: 20;
+}
+
+body {
+	
+}
